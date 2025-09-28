@@ -1,19 +1,34 @@
 package main
 
 import (
-	"answer-question-demo-task-two/pointer"
+	"answer-question-demo-task-two/goroutine"
 	"fmt"
+	"time"
 )
 
 //TIP <p>To run your code, right-click the code and select <b>Run</b>.</p> <p>Alternatively, click
 // the <icon src="AllIcons.Actions.Execute"/> icon in the gutter and select the <b>Run</b> menu item from here.</p>
 
 func main() {
-	// 题目 ：编写一个Go程序，定义一个函数，该函数接收一个整数指针作为参数，在函数内部将该指针指向的值增加10，然后在主函数中调用该函数并输出修改后的值。
-	num := 200
-	fmt.Println(pointer.QuestionOne(&num))
+	// 指针题目一
+	//num := 200
+	//fmt.Println(pointer.QuestionOne(&num))
 
-	// 题目 ：实现一个函数，接收一个整数切片的指针，将切片中的每个元素乘以2。
-	numSlice := []int{1, 2, 3, 4, 5}
-	fmt.Println(pointer.QuestionTwo(&numSlice))
+	// 指针题目二
+	//numSlice := []int{1, 2, 3, 4, 5}
+	//fmt.Println(pointer.QuestionTwo(&numSlice))
+
+	// goroutine题目一
+	//goroutine.GoroutineQuestionOne()
+
+	// goroutine题目二
+	taskSlice := []goroutine.Task{
+		{"task1", func() { time.Sleep(1000 * time.Millisecond) }},
+		{"task2", func() { time.Sleep(2000 * time.Millisecond) }},
+		{"task3", func() { time.Sleep(3000 * time.Millisecond) }},
+		{"task4", func() { time.Sleep(4000 * time.Millisecond) }},
+		{"task5", func() { time.Sleep(3000 * time.Millisecond) }},
+	}
+	fmt.Println(goroutine.GoroutineQuestionTwo(taskSlice))
+
 }
