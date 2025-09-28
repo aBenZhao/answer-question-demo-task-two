@@ -1,21 +1,19 @@
 package main
 
 import (
-  "fmt"
+	"answer-question-demo-task-two/pointer"
+	"fmt"
 )
 
 //TIP <p>To run your code, right-click the code and select <b>Run</b>.</p> <p>Alternatively, click
 // the <icon src="AllIcons.Actions.Execute"/> icon in the gutter and select the <b>Run</b> menu item from here.</p>
 
 func main() {
-  //TIP <p>Press <shortcut actionId="ShowIntentionActions"/> when your caret is at the underlined text
-  // to see how GoLand suggests fixing the warning.</p><p>Alternatively, if available, click the lightbulb to view possible fixes.</p>
-  s := "gopher"
-  fmt.Printf("Hello and welcome, %s!\n", s)
+	// 题目 ：编写一个Go程序，定义一个函数，该函数接收一个整数指针作为参数，在函数内部将该指针指向的值增加10，然后在主函数中调用该函数并输出修改后的值。
+	num := 200
+	fmt.Println(pointer.QuestionOne(&num))
 
-  for i := 1; i <= 5; i++ {
-	//TIP <p>To start your debugging session, right-click your code in the editor and select the Debug option.</p> <p>We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-	// for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.</p>
-	fmt.Println("i =", 100/i)
-  }
+	// 题目 ：实现一个函数，接收一个整数切片的指针，将切片中的每个元素乘以2。
+	numSlice := []int{1, 2, 3, 4, 5}
+	fmt.Println(pointer.QuestionTwo(&numSlice))
 }
