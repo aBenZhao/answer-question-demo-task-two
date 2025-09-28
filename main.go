@@ -1,10 +1,6 @@
 package main
 
-import (
-	"answer-question-demo-task-two/oo"
-	"fmt"
-	"math"
-)
+import "answer-question-demo-task-two/oo"
 
 //TIP <p>To run your code, right-click the code and select <b>Run</b>.</p> <p>Alternatively, click
 // the <icon src="AllIcons.Actions.Execute"/> icon in the gutter and select the <b>Run</b> menu item from here.</p>
@@ -32,10 +28,17 @@ func main() {
 	//fmt.Println(goroutine.GoroutineQuestionTwo(taskSlice))
 
 	// OO题目一
-	circle := oo.Circle{3}
-	fmt.Println("圆的面积：", circle.Area(math.Pi, circle.Radius))
-	fmt.Println("圆的周长：", circle.Perimeter(math.Pi, circle.Radius))
-	rectangle := oo.Rectangle{3, 4}
-	fmt.Println("矩形的面积：", rectangle.Area(rectangle.Long, rectangle.Wind))
-	fmt.Println("矩形的周长：", rectangle.Perimeter(rectangle.Long, rectangle.Wind))
+	//circle := oo.Circle{3}
+	//fmt.Println("圆的面积：", circle.Area(math.Pi, circle.Radius))
+	//fmt.Println("圆的周长：", circle.Perimeter(math.Pi, circle.Radius))
+	//rectangle := oo.Rectangle{3, 4}
+	//fmt.Println("矩形的面积：", rectangle.Area(rectangle.Long, rectangle.Wind))
+	//fmt.Println("矩形的周长：", rectangle.Perimeter(rectangle.Long, rectangle.Wind))
+
+	// OO题目二
+	zhangsan := oo.Employee{oo.Person{"张三", 20}, 20}
+	lisi := oo.Employee{oo.Person{"李四", 12}, 121212}
+	zhangsan.PrintInfo()
+	lisi.PrintInfo()
+
 }
