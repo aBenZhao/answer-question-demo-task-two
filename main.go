@@ -1,6 +1,6 @@
 package main
 
-import "answer-question-demo-task-two/oo"
+import "answer-question-demo-task-two/channel"
 
 //TIP <p>To run your code, right-click the code and select <b>Run</b>.</p> <p>Alternatively, click
 // the <icon src="AllIcons.Actions.Execute"/> icon in the gutter and select the <b>Run</b> menu item from here.</p>
@@ -36,9 +36,15 @@ func main() {
 	//fmt.Println("矩形的周长：", rectangle.Perimeter(rectangle.Long, rectangle.Wind))
 
 	// OO题目二
-	zhangsan := oo.Employee{oo.Person{"张三", 20}, 20}
-	lisi := oo.Employee{oo.Person{"李四", 12}, 121212}
-	zhangsan.PrintInfo()
-	lisi.PrintInfo()
+	//zhangsan := oo.Employee{oo.Person{"张三", 20}, 20}
+	//lisi := oo.Employee{oo.Person{"李四", 12}, 121212}
+	//zhangsan.PrintInfo()
+	//lisi.PrintInfo()
+
+	// channel题目一
+	//channel.UnbufferedChannelQuestion()
+
+	// channel题目二
+	channel.BufferedChannelQuestion()
 
 }
