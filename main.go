@@ -31,7 +31,7 @@ func main() {
 	//}
 	//fmt.Println(goroutine.GoroutineQuestionTwo(taskSlice))
 
-	// OO题目三
+	// OO题目一
 	circle := oo.Circle{3}
 	fmt.Println("圆的面积：", circle.Area(math.Pi, circle.Radius))
 	fmt.Println("圆的周长：", circle.Perimeter(math.Pi, circle.Radius))
