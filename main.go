@@ -1,6 +1,6 @@
 package main
 
-import "answer-question-demo-task-two/channel"
+import "answer-question-demo-task-two/sync"
 
 //TIP <p>To run your code, right-click the code and select <b>Run</b>.</p> <p>Alternatively, click
 // the <icon src="AllIcons.Actions.Execute"/> icon in the gutter and select the <b>Run</b> menu item from here.</p>
@@ -45,6 +45,11 @@ func main() {
 	//channel.UnbufferedChannelQuestion()
 
 	// channel题目二
-	channel.BufferedChannelQuestion()
+	//channel.BufferedChannelQuestion()
 
+	// sync题目一
+	//sync.SyncMutexQuestion()
+
+	// sync题目二
+	sync.UnSyncMutexQuestion()
 }
